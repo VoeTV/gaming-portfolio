@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voe — Kamil Chwyć | Creative Director</title>
+    <meta name="description" content="Portfolio Kamila Chwycia (Voe) — Creative Director w branży gier wideo. Szczecinek. Projekty, case studies i doświadczenie w gamedev.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation HUD -->
+    <header class="site-header">
+        <nav class="nav-hud" aria-label="Nawigacja główna">
+            <a href="#hero" class="nav-logo" aria-label="Strona główna portfolio">
+                <span class="logo-text">Voe</span>
+            </a>
+            <button class="hamburger" aria-label="Otwórz menu nawigacji" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="nav-menu" role="list">
+                <li><a href="#hero" class="nav-link active">Start</a></li>
+                <li><a href="#case-studies" class="nav-link">Projekty</a></li>
+                <li><a href="#about" class="nav-link">O mnie</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Particle Canvas -->
+        <section id="hero" class="hero">
+            <canvas id="hero-particles" aria-hidden="true"></canvas>
+            <div class="hero-content" data-animate="fade-up">
+                <h1 class="hero-title">Kamil Chwyć</h1>
+                <p class="hero-subtitle">Creative Director — tworzę wizualne doświadczenia w grach wideo</p>
+                <a href="#case-studies" class="hero-cta">Odkryj projekty</a>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="case-studies">
+            <h2 class="section-title" data-animate="fade-up">Projekty</h2>
+            <p class="section-subtitle" data-animate="fade-up">Odblokuj poziomy, aby poznać szczegóły każdego projektu</p>
+
+            <div class="case-studies-grid">
+                <!-- Case Study Card 1 -->
+                <article class="case-study-card locked"
+                         data-level="1"
+                         data-animate="fade-up"
+                         tabindex="0"
+                         role="button"
+                         aria-expanded="false"
+                         aria-label="Karta projektu Cyberpunk Arena — kliknij aby odblokować">
+                    <div class="card-header">
+                        <span class="level-badge">POZIOM 01</span>
+                        <h3 class="card-title">Cyberpunk Arena</h3>
+                        <p class="card-subtitle">Art Direction & UI Design</p>
+                    </div>
+                    <div class="progress-bar" aria-hidden="true">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="card-preview">
+                        <img src="jeden.png"
+                             alt="Podgląd projektu Cyberpunk Arena z neonowym interfejsem"
+                             loading="lazy">
+                    </div>
+                    <div class="case-study-content">
+                        <div class="tags">
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Art Direction</span>
+                        </div>
+                        <p class="description">
+                            Kierowanie wizualnym stylem gry wieloosobowej w konwencji cyberpunk.
+                            Odpowiedzialność za interfejs użytkownika, system HUD oraz ogólną
+                            estetykę świata gry. Współpraca z zespołem artystów koncepcyjnych
+                            i programistów nad spójną wizją projektu.
+                        </p>
+                        <div class="video-trailer">
+                            <video controls
+                                   poster="jeden.png"
+                                   preload="none"
+                                   aria-label="Trailer projektu Cyberpunk Arena">
+                                <source src="trailer-1.mp4" type="video/mp4">
+                                <p>Trailer niedostępny — Twoja przeglądarka nie obsługuje odtwarzania wideo.</p>
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study Card 2 -->
+                <article class="case-study-card locked"
+                         data-level="2"
+                         data-animate="fade-up"
+                         tabindex="0"
+                         role="button"
+                         aria-expanded="false"
+                         aria-label="Karta projektu Neon Odyssey — kliknij aby odblokować">
+                    <div class="card-header">
+                        <span class="level-badge">POZIOM 02</span>
+                        <h3 class="card-title">Neon Odyssey</h3>
+                        <p class="card-subtitle">Creative Direction & World Building</p>
+                    </div>
+                    <div class="progress-bar" aria-hidden="true">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="card-preview">
+                        <img src="dwa.png"
+                             alt="Podgląd projektu Neon Odyssey z futurystycznym krajobrazem"
+                             loading="lazy">
+                    </div>
+                    <div class="case-study-content">
+                        <div class="tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">World Design</span>
+                            <span class="tag">Narrative</span>
+                        </div>
+                        <p class="description">
+                            Pełna odpowiedzialność za kierunek kreatywny gry przygodowej
+                            w otwartym świecie. Projektowanie narracji środowiskowej,
+                            budowanie świata gry oraz nadzór nad zespołem level designerów.
+                            Tworzenie spójnej wizji artystycznej łączącej retro-futuryzm
+                            z elementami noir.
+                        </p>
+                        <div class="video-trailer">
+                            <video controls
+                                   poster="dwa.png"
+                                   preload="none"
+                                   aria-label="Trailer projektu Neon Odyssey">
+                                <source src="trailer-2.mp4" type="video/mp4">
+                                <p>Trailer niedostępny — Twoja przeglądarka nie obsługuje odtwarzania wideo.</p>
+                            </video>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section (Terminal-style Bio) -->
+        <section id="about" class="about">
+            <h2 class="section-title" data-animate="fade-up">O mnie</h2>
+            <div class="about-terminal" data-animate="fade-up">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">creative_director.exe</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd">whoami</span></p>
+                    <p class="terminal-output">Kamil Chwyć aka Voe — Creative Director, Szczecinek 78-400</p>
+                    <p class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd">skills --list</span></p>
+                    <p class="terminal-output">Art Direction, UI/UX Design, World Building, Narrative Design, Team Leadership</p>
+                    <p class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd">experience --summary</span></p>
+                    <p class="terminal-output">Kierowanie zespołami kreatywnymi w studiach AAA i indie. Odpowiedzialność za wizualną tożsamość projektów od koncepcji po premierę. Specjalizacja w estetyce cyberpunk i sci-fi.</p>
+                    <p class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd">tools --favorites</span></p>
+                    <p class="terminal-output">Unreal Engine, Unity, Blender, Figma, Photoshop, After Effects</p>
+                    <p class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd">contact --discord</span></p>
+                    <p class="terminal-output"><a href="https://discord.gg/t5eb3v2W7" target="_blank" rel="noopener">discord.gg/t5eb3v2W7</a></p>
+                    <p class="terminal-line terminal-cursor"><span class="prompt">&gt;</span> <span class="cmd">_</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title" data-animate="fade-up">Kontakt</h2>
+            <p class="section-subtitle" data-animate="fade-up">Masz projekt do omówienia? Napisz do mnie lub dołącz na <a href="https://discord.gg/t5eb3v2W7" target="_blank" rel="noopener">Discord</a>.</p>
+            <form class="contact-form" data-animate="fade-up" aria-label="Formularz kontaktowy">
+                <div class="form-group">
+                    <label for="contact-name">Imię i nazwisko</label>
+                    <input type="text" id="contact-name" name="name" required autocomplete="name" placeholder="Jan Kowalski">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Adres e-mail</label>
+                    <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="jan@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Wiadomość</label>
+                    <textarea id="contact-message" name="message" rows="5" required placeholder="Opisz swój projekt lub pytanie..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2024 Kamil Chwyć (Voe) — Szczecinek. Wszelkie prawa zastrzeżone.</p>
+            <nav class="footer-links" aria-label="Nawigacja stopki">
+                <a href="#hero" class="footer-link">Start</a>
+                <a href="#case-studies" class="footer-link">Projekty</a>
+                <a href="#about" class="footer-link">O mnie</a>
+                <a href="#contact" class="footer-link">Kontakt</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
